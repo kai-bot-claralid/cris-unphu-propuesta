@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRIS UNPHU — Propuesta visual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#" aria-label="CRIS UNPHU">
+      <img src="assets/logo-unphu.png" alt="UNPHU 60 aniversario" />
+      <span></span>
+      <strong>CRIS</strong>
+      <small>PORTAL DE ACTIVIDAD DE<br>INVESTIGACIÓN RECIENTE</small>
+    </a>
+    <button class="menu-button" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav>
+      <a class="active" href="#">Inicio</a>
+      <a href="#about">Acerca de CRIS</a>
+      <a href="#content">Contenidos <span>⌄</span></a>
+      <a href="#login"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6.5 19c.5-4 2.3-6 5.5-6s5 2 5.5 6"/></svg> Iniciar sesión</a>
+      <a href="#language"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c2.6 2.2 3.8 4.9 3.8 8S14.6 17.8 12 20M12 4c-2.6 2.2-3.8 4.9-3.8 8s1.2 5.8 3.8 8"/></svg> Idioma ⌄</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Descubre la investigación<br>que impulsa el conocimiento</h1>
+        <form class="search" onsubmit="return false">
+          <input aria-label="Buscar" placeholder="Buscar en el repositorio" />
+          <button class="filter" type="button">Todos <span>⌄</span></button>
+          <button class="submit" type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="page-shell" id="content">
+      <section class="metrics" aria-label="Estadísticas">
+        <article><svg viewBox="0 0 48 48"><path d="M13 5h17l8 8v30H13zM30 5v9h8M19 22h13M19 29h13M19 36h9"/></svg><span>Publicaciones</span><strong>1,942</strong></article>
+        <article><svg viewBox="0 0 48 48"><circle cx="17" cy="17" r="7"/><circle cx="33" cy="17" r="7"/><path d="M5 41c1-10 5-15 12-15s11 5 12 15M23 40c1-8 4-13 10-13s9 5 10 13"/></svg><span>Perfiles</span><strong>34</strong></article>
+        <article><svg viewBox="0 0 48 48"><path d="M12 10h23v32H12zM18 10V6h11v4M23 18h15v25H23z"/></svg><span>Proyectos</span><strong>47</strong></article>
+        <article><svg viewBox="0 0 48 48"><path d="m7 17 17-10 17 10zM11 20h26M13 20v16M21 20v16M29 20v16M37 20v16M8 37h32M5 42h38"/></svg><span>Organización</span><strong>31</strong></article>
+        <article><svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="6"/><circle cx="10" cy="19" r="5"/><circle cx="38" cy="19" r="5"/><path d="M14 39c.8-9 4-14 10-14s9.2 5 10 14M2 38c.6-7 3.3-11 8-11 3 0 5.2 1.5 6.5 4M46 38c-.6-7-3.3-11-8-11-3 0-5.2 1.5-6.5 4"/></svg><span>Grupos de investigación</span><strong>23</strong></article>
+        <article><svg viewBox="0 0 48 48"><path d="M24 5c4 4 7 4 12 4 0 8 3 12 7 15-5 4-7 8-8 16-5-2-8-2-11 3-3-5-6-5-11-3-1-8-3-12-8-16 4-3 7-7 7-15 5 0 8 0 12-4z"/></svg><span>Patentes</span><strong>12</strong></article>
+      </section>
+
+      <section class="panel map-panel">
+        <h2>Mapa de colaboración</h2>
+        <div class="map-wrap">
+          <svg class="world" viewBox="0 0 900 390" role="img" aria-label="Mapa mundial de colaboraciones">
+            <path d="M66 92 105 58l74-15 58 11 42 35-17 28-40 9-8 38-31 13-11 51-31 26-19-47-23-22-7-42-33-16zm178 173 29 26 18 60-26 31-22-55-20-28zm158-166 32-39 75-13 52 18 8 37-30 12-26 35-48 4-28 40-43-15-27-38 14-31zm40 103 43 6 43 53-10 64-40 40-28-67-27-49zm112-122 55-26 114 22 61 44-18 35-69 1-29 26-49-16-55-22-9-31zm153 202 65 4 45 35-20 30-67 2-38-39z"/>
+            <g class="dots"><circle cx="155" cy="144" r="5"/><circle cx="200" cy="225" r="10"/><circle cx="267" cy="317" r="4"/><circle cx="433" cy="148" r="8"/><circle cx="453" cy="139" r="5"/><circle cx="478" cy="119" r="4"/><circle cx="511" cy="135" r="4"/><circle cx="587" cy="155" r="6"/><circle cx="646" cy="130" r="4"/><circle cx="704" cy="196" r="4"/><circle cx="357" cy="215" r="4"/></g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <section class="panel publications">
+          <div class="panel-head"><h2>Publicaciones recientes</h2><a href="#">Ver todas <b>›</b></a></div>
+          <article><div><h3>A systematic review of the use of intelligent technology of assistance for dementia patients</h3><p>Cabrera, Gabriela Pichardo; Naut, Marianna Bourriga</p><span>Artículo</span></div><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></svg></article>
+          <article><div><h3>Pilot Study on Risk Perception in Practices with Medical Cyclotrons in Radiopharmaceutical Centers</h3><p>Torres-Valle, Antonio; Montero-Díaz, Frank; Jauregui-Haza, Ulises</p><span>Artículo</span></div><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></svg></article>
+          <article><div><h3>Chemical composition and antimicrobial activity of three Pimenta racemosa var. ozua extracts</h3><p>Muñoz-Martínez, Tapia Isabel; Romero, Lolymar de los Ángeles</p><span>Artículo</span></div><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></svg></article>
+          <article><div><h3>Heavy Metal Concentrations in Particulate Matter: A Case Study from Santo Domingo</h3><p>Delanoy, Ramón; Matos-Espinosa, Carime; Hernández-Garcés, Anel</p><span>Artículo</span></div><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></svg></article>
+        </section>
+
+        <aside>
+          <section class="panel news">
+            <div class="panel-head"><h2>Noticias</h2><a href="#">Ver todas <b>›</b></a></div>
+            <div class="news-card"><small>EVENTOS &nbsp; 20 MAY 2026</small><h3>Pitch 4 Fun</h3><p>Impulsando ideas, conectando talentos y creando futuro.</p><button>Más información</button><svg viewBox="0 0 64 64"><rect x="21" y="7" width="22" height="40" rx="11"/><path d="M14 30v3a18 18 0 0 0 36 0v-3M32 51v8M23 59h18"/></svg></div>
+            <div class="slider"><button>‹</button><span>● ○ ○ ○</span><button>›</button></div>
+          </section>
+          <section class="panel resources"><h2>Recursos y herramientas</h2>
+            <a href="#"><span>◆</span> Portal de investigación <b>›</b></a><a href="#"><span>▣</span> Repositorio Institucional <b>›</b></a><a href="#"><span>▤</span> Biblioteca <b>›</b></a><a href="#"><span>◫</span> Bases de datos <b>›</b></a><a href="#"><span>◉</span> Comunidades y Colecciones <b>›</b></a>
+          </section>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="assets/logo-unphu.png" alt="UNPHU" /></div>
+      <div class="footer-center"><nav><a href="#">Inicio</a><i></i><a href="#">Acerca de CRIS</a><i></i><a href="#">Preguntas frecuentes</a><i></i><a href="#">Contáctanos</a></nav><p><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="9" r="2"/></svg> Universidad Nacional Pedro Henríquez Ureña<br><span>Avenida John F. Kennedy #1, Santo Domingo, República Dominicana<br>Apartado postal 1423</span></p></div>
+      <div class="footer-contact"><p>☎ &nbsp;Tel.: (809) 562-6601</p><p>✉ &nbsp;criss@unphu.edu.do</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
